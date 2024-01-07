@@ -9,9 +9,17 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
+      formats: ["es", "cjs"],
       name: "HTML2MD",
       fileName: "html2md",
     },
+    rollupOptions: {
+      output: {
+        sourcemapExcludeSources: true,
+      },
+    },
+    sourcemap: true,
+    target: "esnext",
   },
   plugins: [
     dts({

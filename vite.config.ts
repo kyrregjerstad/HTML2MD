@@ -13,5 +13,10 @@ export default defineConfig({
       fileName: "html2md",
     },
   },
-  plugins: [dts({ exclude: ["**/*.spec.ts", "**/*.test.ts"] })],
+  plugins: [
+    dts({
+      insertTypesEntry: true,
+      exclude: ["**/*.spec.ts", "**/*.test.ts"],
+    }),
+  ],
 });

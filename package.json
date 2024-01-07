@@ -1,0 +1,26 @@
+{
+  "name": "html2md",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/html2md.js",
+  "main": "./dist/html2md.umd.cjs",
+  "version": "0.0.1",
+  "exports": {
+    ".": {
+      "import": "./dist/html2md.js",
+      "require": "./dist/html2md.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
+  },
+  "dependencies": {}
+}

@@ -1,12 +1,12 @@
 {
-  "name": "html2md",
+  "name": "@kyrregjerstad/html2md",
   "type": "module",
   "files": [
     "dist"
   ],
   "module": "./dist/html2md.js",
   "main": "./dist/html2md.umd.cjs",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "exports": {
     ".": {
       "import": "./dist/html2md.js",

@@ -7,6 +7,7 @@
   "module": "./dist/html2md.js",
   "main": "./dist/html2md.umd.cjs",
   "version": "0.0.4",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/html2md.js",
